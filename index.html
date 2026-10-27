@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MW BUTTERFLY</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f4ee;--ink:#3b2a22;--soft:#7a6358;--rose:#b85a43;--petal:#f6c6a5;--gold:#e8bb5e;--card:#fffdf9;--line:#e6dccd;--disc:#eeeae0;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241a16;--ink:#f6e9dc;--soft:#c9b3a3;--card:#32241e;--line:#4d3a31;--disc:#2f241f;--rose:#d9826f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#241a16;--ink:#f6e9dc;--soft:#c9b3a3;--card:#32241e;--line:#4d3a31;--disc:#2f241f;--rose:#d9826f;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.1;margin:0}
+.love{display:flex;align-items:center;justify-content:center;gap:1rem;padding:1rem;background:linear-gradient(90deg,transparent,rgba(235,169,163,.28),rgba(246,198,165,.34),rgba(235,169,163,.28),transparent);border-bottom:1px solid var(--line);color:var(--ink);font:400 clamp(1.5rem,4.5vw,2.3rem)/1.2 "Great Vibes","Cormorant Garamond",cursive;text-align:center;animation:rise 1.4s ease both}
+.love i{display:block;width:clamp(30px,10vw,120px);height:1px;background:linear-gradient(90deg,transparent,var(--rose))}.love i:last-child{transform:scaleX(-1)}
+@keyframes rise{from{opacity:0;transform:translateY(-8px)}}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 5vw;max-width:1200px;margin:auto}
+nav b{font:700 1.7rem "Cormorant Garamond",serif}nav a{color:var(--ink);text-decoration:none;margin-left:1.4rem;font-weight:600}
+nav a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;max-width:1200px;margin:auto;padding:2rem 5vw 4rem}
+.hero h1{color:var(--ink);font-size:clamp(2.4rem,5.2vw,4.2rem)}.hero p{color:var(--soft);max-width:44ch;font-size:1.15rem}
+.btn{display:inline-block;background:var(--rose);color:#fff;border:0;border-radius:99px;padding:.85rem 1.7rem;font:600 1rem Manrope,sans-serif;cursor:pointer;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+#ring{width:100%;max-width:560px;margin:auto;display:block}
+.spin{transform-origin:300px 300px;animation:spin 40s linear infinite}
+.wing{transform-box:fill-box;transform-origin:center;animation:flap .5s ease-in-out infinite alternate}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes flap{to{transform:scaleX(.35)}}
+section{max-width:1200px;margin:auto;padding:4rem 5vw}
+h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:.4rem}.sub{color:var(--soft);margin:0 0 2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.6rem;perspective:1000px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.2rem;transition:transform .15s;transform-style:preserve-3d}
+.card .art{height:150px;border-radius:14px;display:grid;place-items:center;font-size:3.4rem;transform:translateZ(40px);background:linear-gradient(135deg,#f6c6a5,#f3e2a8)}
+.card h3{font-size:1.5rem;margin:.9rem 0 .2rem}.card p{margin:.2rem 0 .6rem;color:var(--soft);font-size:.95rem}.card .btn{margin-top:.8rem;padding:.6rem 1.3rem}.mems{display:grid;gap:1rem;margin-top:2rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.mem{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1rem 1.2rem}.mem b{font:700 1.2rem "Cormorant Garamond",serif}.mem p{margin:.3rem 0 0;color:var(--soft)}#mm{min-height:1.5rem;font-weight:600}
+
+form{display:grid;gap:.9rem;max-width:520px}
+input,select,textarea{font:inherit;padding:.75rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink)}
+#msg{min-height:1.5rem;font-weight:600}footer{text-align:center;color:var(--soft);padding:3rem 1rem}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center}.hero p{margin:1rem auto}nav a{margin-left:.9rem}}
+@media(prefers-reduced-motion:reduce){.spin,.spin2,.wings,.sway,.love{animation:none}.card{transition:none}}
+</style>
+</head>
+<body>
+<div class="love"><i></i><span>I always love you, my butterfly 🦋.</span><i></i></div>
+<nav><b>MW BUTTERFLY</b><div><a href="#work">Work</a></div></nav>
+
+<header class="hero">
+<div><h1>I want to spend my whole life with you, butterfly</h1><p>You are the most important person in my life. You are the most important person for me. One day I will marry you, my butterfly. Remember, butterfly, I am always with you.</p><a class="btn" href="#work">See the collection</a></div>
+<svg id="ring" viewBox="0 0 700 700" role="img" aria-label="Wreath of flowers with butterflies flying above swaying flowers, with product names rotating around it">
+<defs>
+<path id="tp" d="M350 350m-326 0a326 326 0 1 1 652 0a326 326 0 1 1-652 0"/>
+<clipPath id="cp"><circle cx="350" cy="350" r="224"/></clipPath>
+<g id="pf"><g fill="#eba9a3"><ellipse cy="-17" rx="13" ry="18"/><ellipse cy="-17" rx="13" ry="18" transform="rotate(72)"/><ellipse cy="-17" rx="13" ry="18" transform="rotate(144)"/><ellipse cy="-17" rx="13" ry="18" transform="rotate(216)"/><ellipse cy="-17" rx="13" ry="18" transform="rotate(288)"/></g><circle r="9" fill="#f3d97a"/></g>
+<g id="cf"><g fill="#f6c6a5"><ellipse cy="-17" rx="13" ry="18"/><ellipse cy="-17" rx="13" ry="18" transform="rotate(72)"/><ellipse cy="-17" rx="13" ry="18" transform="rotate(144)"/><ellipse cy="-17" rx="13" ry="18" transform="rotate(216)"/><ellipse cy="-17" rx="13" ry="18" transform="rotate(288)"/></g><circle r="8" fill="#c9553a"/></g>
+</defs>
+<circle cx="350" cy="350" r="224" fill="var(--disc)" stroke="#d6d0c2" stroke-width="2"/>
+<g fill="#8a6a5c" font-family="Cormorant Garamond,serif" font-weight="700" font-size="20" letter-spacing="4"><text><textPath href="#tp">Memory Garden ✿ Butterfly Ludo ✿ Petal Puzzle ✿ Moon Chess ✿ Sunny Dominoes ✿ Blossom Cards ✿ Garden Bingo ✿ </textPath></text><animateTransform attributeName="transform" type="rotate" from="360 350 350" to="0 350 350" dur="140s" repeatCount="indefinite"/></g>
+<g id="wreath"><animateTransform attributeName="transform" type="rotate" from="0 350 350" to="360 350 350" dur="90s" repeatCount="indefinite"/></g>
+<g clip-path="url(#cp)" id="garden"></g>
+<g id="bfs"></g>
+</svg>
+</header>
+
+<section id="work"><h2>Selected work</h2><p class="sub">Sample products from the collection.</p><div class="grid" id="products"></div></section>
+
+<section id="garden-memories"><h2>Memory Garden</h2><p class="sub">Leave a memory. Every message you write is saved here for everyone to read.</p><form id="mf"><input name="name" placeholder="Your name" required maxlength="60" autocomplete="name"><textarea name="text" rows="3" placeholder="Write your memory" required maxlength="400"></textarea><button class="btn" type="submit">Plant memory</button><div id="mm" role="status"></div></form><div id="memlist" class="mems"></div></section>
+
+<style>[hidden]{display:none!important}.tabs{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.4rem}.tab{font:600 1rem Manrope,sans-serif;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:.6rem 1.2rem;cursor:pointer}.tab[aria-selected=true]{background:var(--rose);border-color:var(--rose);color:#fff}.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}.gp p{min-height:1.6rem;font-weight:600}.track{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;max-width:560px}.cell{background:var(--card);border:1px solid var(--line);border-radius:10px;min-height:58px;padding:2px;text-align:center;font-size:1.1rem;line-height:1.2}.cell small{display:block;font-size:.65rem;color:var(--soft)}.cell.star{background:#f6e7c8;color:#3b2a22}.cell.star small{color:#7a6358}#lmoves{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0}.cb{display:grid;grid-template-columns:repeat(8,1fr);width:min(100%,520px);aspect-ratio:1;border:2px solid var(--line);border-radius:10px;overflow:hidden}.sq{border:0;padding:0;font-size:clamp(1.4rem,7vw,2.6rem);cursor:pointer;background:#eeeae0;display:grid;place-items:center}.sq.dk{background:#c9a8b4}.sq.sel{outline:3px solid var(--rose);outline-offset:-3px}.sq.hint{box-shadow:inset 0 0 0 4px rgba(184,90,67,.55)}.pc.w{color:#fff;text-shadow:0 0 2px #000,0 0 2px #000}.pc.b{color:#2a1d17}.pb{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:min(100%,320px)}.tile{aspect-ratio:1;border:0;border-radius:16px;background:var(--rose);color:#fff;font:700 2rem 'Cormorant Garamond',serif;cursor:pointer}.tile.e{background:transparent;cursor:default}</style>
+<section id='play'><h2>Play</h2><p class='sub'>Pick a game and play against the computer.</p><div class='tabs'><button class='tab' data-g='ludo'>Butterfly Ludo</button><button class='tab' data-g='chess'>Moon Chess</button><button class='tab' data-g='puzzle'>Petal Puzzle</button></div>
+<div id='g-ludo' class='gp'><div id='ltrack' class='track'></div><p id='lmsg' role='status'></p><div id='lmoves'></div><button class='btn' id='lroll'>Roll the die</button> <button class='btn alt' id='lnew'>New game</button></div>
+<div id='g-chess' class='gp' hidden><div id='cb' class='cb'></div><p id='cmsg' role='status'></p><button class='btn alt' id='cnew'>New game</button></div>
+<div id='g-puzzle' class='gp' hidden><div id='pb' class='pb'></div><p id='pmsg' role='status'></p><button class='btn alt' id='pnew'>Shuffle</button></div></section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js'></script>
+<script>(()=>{const q=s=>document.querySelector(s),R=n=>1+Math.random()*n|0,GM={'Butterfly Ludo':'ludo','Petal Puzzle':'puzzle','Moon Chess':'chess'};
+const gp=document.querySelectorAll('.gp'),tabs=document.querySelectorAll('.tab');
+function show(g){gp.forEach(e=>e.hidden=e.id!=='g-'+g);tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset.g===g))}
+document.addEventListener('click',e=>{const a=e.target.closest('[data-g]');if(a)show(a.dataset.g)});show('ludo');
+window.PL=n=>GM[n]?`<a class='btn' href='#play' data-g='${GM[n]}'>Play now</a>`:'';
+const L={h:[0,0],c:[0,0],d:0,t:'h',over:false},cnt=(a,i)=>a.filter(p=>p===i).length,mvs=q('#lmoves'),msg=t=>q('#lmsg').textContent=t;
+function lr(){q('#ltrack').innerHTML=Array.from({length:21},(_,i)=>`<div class='cell${i&&i<20&&i%5===0?' star':''}'><small>${i===0?'Start':i===20?'Home':i%5===0?'★':i}</small>${'🦋'.repeat(cnt(L.h,i))}${'🐞'.repeat(cnt(L.c,i))}</div>`).join('')}
+function mv(a,o,i,d){const n=Math.min(20,a[i]+d);a[i]=n;if(n&&n<20&&n%5)o.forEach((p,j)=>{if(p===n)o[j]=0})}
+function lnew(){L.h=[0,0];L.c=[0,0];L.d=0;L.t='h';L.over=false;mvs.innerHTML='';lr();msg('Roll the die to begin. You are 🦋 and the computer is 🐞. ★ squares are safe.')}
+q('#lroll').onclick=()=>{if(L.over||L.t!=='h'||L.d)return;L.d=R(6);msg(`You rolled ${L.d}. Choose a butterfly to move.`);mvs.innerHTML=[0,1].filter(i=>L.h[i]<20).map(i=>`<button class='btn alt' data-m='${i}'>Butterfly ${i+1} (square ${L.h[i]})</button>`).join('')};
+mvs.onclick=e=>{const b=e.target.closest('[data-m]');if(!b||!L.d)return;const d=L.d;L.d=0;mv(L.h,L.c,+b.dataset.m,d);mvs.innerHTML='';lr();if(L.h.every(p=>p===20)){L.over=true;return msg('You win! 🎉')}if(d===6)return msg('You rolled a 6. Roll again!');L.t='c';msg('Computer is thinking…');setTimeout(comp,900)};
+function comp(){const d=R(6);let best=-1,bi=0;[0,1].forEach(i=>{if(L.c[i]>=20)return;const n=Math.min(20,L.c[i]+d),s=(n<20&&n%5&&L.h.includes(n)?100:0)+(n===20?50:0)+n;if(s>best){best=s;bi=i}});mv(L.c,L.h,bi,d);lr();if(L.c.every(p=>p===20)){L.over=true;return msg('The computer wins this time. Try again!')}if(d===6){msg('Computer rolled a 6 and goes again…');return setTimeout(comp,900)}L.t='h';msg(`Computer rolled ${d}. Your turn.`)}
+q('#lnew').onclick=lnew;lnew();
+let P=[],pc=0;const pr=()=>q('#pb').innerHTML=P.map((v,i)=>`<button class='tile${v?'':' e'}' data-p='${i}' ${v?'':'tabindex=-1'}>${v||''}</button>`).join('');
+function pm(i){const z=P.indexOf(0);if(Math.abs((i/3|0)-(z/3|0))+Math.abs(i%3-z%3)!==1)return false;[P[i],P[z]]=[P[z],P[i]];return true}
+function pnew(){P=[1,2,3,4,5,6,7,8,0];let last=-1;for(let k=0;k<120;k++){const z=P.indexOf(0),o=[z-3,z+3,z-1,z+1].filter(i=>i>=0&&i<9&&i!==last&&Math.abs((i/3|0)-(z/3|0))+Math.abs(i%3-z%3)===1);last=z;pm(o[R(o.length)-1])}pc=0;pr();q('#pmsg').textContent='Slide the petals into order, 1 to 8.'}
+q('#pb').onclick=e=>{const b=e.target.closest('[data-p]');if(b&&pm(+b.dataset.p)){pc++;pr();q('#pmsg').textContent=P.every((v,i)=>v===(i+1)%9)?`Solved in ${pc} moves! 🌱`:`Moves: ${pc}`}};
+q('#pnew').onclick=pnew;pnew();
+const GL={p:'♟',n:'♞',b:'♝',r:'♜',q:'♛',k:'♚'},VAL={p:1,n:3,b:3,r:5,q:9,k:0};let ch=null,sel=null,hint=[];
+function cr(){const b=ch.board();q('#cb').innerHTML=b.map((row,r)=>row.map((p,f)=>{const s='abcdefgh'[f]+(8-r);return `<button class='sq${(r+f)%2?' dk':''}${s===sel?' sel':''}${hint.includes(s)?' hint':''}' data-s='${s}' aria-label='${s}${p?' '+p.color+p.type:''}'>${p?`<span class='pc ${p.color}'>${GL[p.type]}</span>`:''}</button>`}).join('')).join('');q('#cmsg').textContent=ch.in_checkmate()?(ch.turn()==='w'?'Checkmate. The computer wins.':'Checkmate. You win! 🎉'):ch.game_over()?'Draw.':ch.turn()==='w'?'Your move (white)'+(ch.in_check()?'. You are in check.':''):'Computer is thinking…'}
+function ev(){let v=0;ch.board().forEach(r=>r.forEach(p=>{if(p)v+=(p.color==='w'?1:-1)*VAL[p.type]}));return v}
+function mm(d,a,b,w){if(!d)return ev();const ms=ch.moves();if(!ms.length)return ch.in_checkmate()?(w?-999:999):0;let best=w?-1e5:1e5;for(const m of ms){ch.move(m);const v=mm(d-1,a,b,!w);ch.undo();if(w){best=Math.max(best,v);a=Math.max(a,v)}else{best=Math.min(best,v);b=Math.min(b,v)}if(b<=a)break}return best}
+function ai(){if(ch.game_over())return;let bm=null,bv=1e5;for(const m of ch.moves().sort(()=>Math.random()-.5)){ch.move(m);const v=mm(1,-1e5,1e5,true);ch.undo();if(v<bv){bv=v;bm=m}}ch.move(bm);cr()}
+q('#cb').onclick=e=>{const b=e.target.closest('[data-s]');if(!b||!ch||ch.turn()!=='w'||ch.game_over())return;const s=b.dataset.s;if(sel&&hint.includes(s)){ch.move({from:sel,to:s,promotion:'q'});sel=null;hint=[];cr();if(!ch.game_over())setTimeout(ai,350);return}const p=ch.get(s);if(p&&p.color==='w'){sel=s;hint=ch.moves({square:s,verbose:true}).map(m=>m.to)}else{sel=null;hint=[]}cr()};
+function cnew(){if(!window.Chess){q('#cmsg').textContent='Chess could not load. Check your connection and refresh.';return}ch=new Chess();sel=null;hint=[];cr()}
+q('#cnew').onclick=cnew;cnew();})();</script>
+<footer>© 2026 MW BUTTERFLY. Made with care.</footer>
+
+<script>
+const NS="http://www.w3.org/2000/svg",$=s=>document.querySelector(s);
+const mk=(t,a={},p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p&&p.append(e);return e};
+const W=$("#wreath");
+for(let k=0;k<12;k++)[[0,"pf",1.05],[8,"leaf"],[15,"cf",.62],[23,"leaf"]].forEach(([d,t,sc])=>{
+ const a=(k*30+d)*Math.PI/180-Math.PI/2,x=350+268*Math.cos(a),y=350+268*Math.sin(a),deg=a*180/Math.PI;
+ if(t==="leaf")mk("ellipse",{rx:12,ry:4.2,fill:"#8aa77f",transform:`translate(${x} ${y}) rotate(${deg+90})`},W);
+ else mk("use",{href:"#"+t,transform:`translate(${x} ${y}) rotate(${k*17}) scale(${sc})`},W)});
+const G=$("#garden");
+[[262,"pf",505,560],[318,"cf",482,575],[380,"pf",470,585],[442,"cf",486,570],[498,"pf",508,555]].forEach(([x,t,y,b],i)=>{
+ const g=mk("g",{},G),cy=b+30;mk("animateTransform",{attributeName:"transform",type:"rotate",values:`-2.5 ${x} ${cy};2.5 ${x} ${cy};-2.5 ${x} ${cy}`,keyTimes:"0;.5;1",calcMode:"spline",keySplines:".45 0 .55 1;.45 0 .55 1",dur:(4+i*.5)+"s",begin:(-i*.9)+"s",repeatCount:"indefinite"},g);
+ mk("path",{d:`M${x} ${y} C${x+(i%2?6:-6)} ${y+30} ${x} ${b-20} ${x} ${b+30}`,stroke:"#8aa77f","stroke-width":4,fill:"none","stroke-linecap":"round"},g);
+ mk("use",{href:"#"+t,transform:`translate(${x} ${y}) rotate(${i*23}) scale(1.05)`},g)});
+const wing='<path d="M-2-3C-10-30-40-40-48-18-52-4-24 4-2 2Z" fill="#d9824f" stroke="#3b2a22" stroke-width="1.6"/><path d="M-2 3C-26 6-42 22-30 36-20 44-4 28-2 8Z" fill="#e8bb5e" stroke="#3b2a22" stroke-width="1.6"/><path d="M-6-4-30-20M-6-1-38-6M-6 6-24 26" stroke="#3b2a22" stroke-width="1" fill="none"/><circle cx="-38" cy="-12" r="1.6" fill="#fff"/><circle cx="-24" cy="30" r="1.6" fill="#fff"/>';
+[[370,290,62,26,22,0],[285,398,48,26,26,2],[415,402,42,28,24,4]].forEach(([cx,cy,ax,ay,du,ph],n)=>{
+ let d="";for(let k=0;k<=72;k++){const t=k/72*2*Math.PI;d+=(k?"L":"M")+(cx+ax*Math.sin(t)).toFixed(1)+" "+(cy+ay*Math.sin(2*t+ph)).toFixed(1)}
+ const g=mk("g",{},$("#bfs")),w=mk("g",{},g),i=mk("g",{transform:"scale(1.05)"},w);
+ i.innerHTML=`<g><animateTransform attributeName="transform" type="scale" values="1 1;.25 1;1 1" keyTimes="0;.5;1" dur=".55s" begin="${-n*.17}s" repeatCount="indefinite"/><g>${wing}</g><g transform="scale(-1 1)">${wing}</g></g><ellipse cy="4" rx="2.8" ry="15" fill="#2a1d17"/><path d="M0-10-6-24M0-10 6-24" stroke="#2a1d17" stroke-width="1.2" fill="none"/>`;
+ mk("animateTransform",{attributeName:"transform",type:"rotate",values:"-10;10;-10",keyTimes:"0;.5;1",calcMode:"spline",keySplines:".45 0 .55 1;.45 0 .55 1",dur:(3+n)+"s",repeatCount:"indefinite"},w);
+ mk("animateMotion",{dur:du+"s",repeatCount:"indefinite",path:d},g)});
+if(matchMedia("(prefers-reduced-motion:reduce)").matches)$("#ring").pauseAnimations();
+const MOON=`<svg viewBox="0 0 140 120" width="150" height="130" role="img" aria-label="Moon flower with a butterfly resting on it"><circle cx="62" cy="66" r="48" fill="#fff6dc" opacity=".65"/><g transform="translate(62 66)" fill="#fff" stroke="#cfc3e6" stroke-width="1.5"><ellipse cy="-22" rx="16" ry="24"/><ellipse cy="-22" rx="16" ry="24" transform="rotate(72)"/><ellipse cy="-22" rx="16" ry="24" transform="rotate(144)"/><ellipse cy="-22" rx="16" ry="24" transform="rotate(216)"/><ellipse cy="-22" rx="16" ry="24" transform="rotate(288)"/></g><circle cx="62" cy="66" r="8" fill="#f3d97a"/><g transform="translate(112 30) rotate(18) scale(.6)"><g><animateTransform attributeName="transform" type="scale" values="1 1;.25 1;1 1" keyTimes="0;.5;1" dur=".9s" repeatCount="indefinite"/><g>${wing}</g><g transform="scale(-1 1)">${wing}</g></g><ellipse cy="4" rx="2.8" ry="15" fill="#2a1d17"/></g></svg>`;
+let products=[{id:0,name:"Moon Flower",price:34,desc:"This moon flower has a beautiful butterfly resting on its petals."},{id:1,name:"Memory Garden",price:24,icon:"🌱"},{id:2,name:"Butterfly Ludo",price:29},{id:3,name:"Petal Puzzle",price:19},{id:4,name:"Moon Chess",price:39}];
+function render(){$("#products").innerHTML=products.map(p=>`<article class="card">${p.id===0||p.icon?`<div class="art" aria-hidden="true">${p.id===0?MOON:p.icon}</div>`:''}<h3>${p.name}</h3>${p.id===0?'<p>This moon flower has a beautiful butterfly resting on its petals.</p>':''}${p.name==="Memory Garden"?'<a class="btn" href="#garden-memories">Write a memory</a>':''}${PL(p.name)}</article>`).join("");
+document.querySelectorAll(".card").forEach(c=>{c.onmousemove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`rotateY(${x*16}deg) rotateX(${-y*16}deg)`};c.onmouseleave=()=>c.style.transform=""})}
+render();
+fetch("/api/products").then(r=>r.ok?r.json():Promise.reject()).then(d=>{products=d;render()}).catch(()=>{});
+const LS="bf_memories",loadLocal=()=>{try{return JSON.parse(localStorage.getItem(LS)||"[]")}catch{return[]}};
+function showMems(list){const box=$("#memlist");box.textContent="";if(!list.length){box.textContent="No memories yet. Write the first one.";return}list.slice().reverse().forEach(m=>{const d=document.createElement("div"),b=document.createElement("b"),p=document.createElement("p");d.className="mem";b.textContent=m.name;p.textContent=m.text;d.append(b,p);box.append(d)})}
+showMems(loadLocal());
+fetch("/api/memories").then(r=>r.ok?r.json():Promise.reject()).then(showMems).catch(()=>{});
+$("#mf").onsubmit=async e=>{e.preventDefault();const f=e.target,o=Object.fromEntries(new FormData(f)),m=$("#mm");
+ try{const r=await fetch("/api/memories",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(o)});if(!r.ok)throw 0;showMems(await(await fetch("/api/memories")).json());m.textContent="Your memory is saved.";f.reset();return}catch{}
+ try{const l=loadLocal();l.push({name:o.name.slice(0,60),text:o.text.slice(0,400)});localStorage.setItem(LS,JSON.stringify(l));showMems(l);m.textContent="Saved on this device only. Run the backend to share memories with everyone.";f.reset()}catch{m.textContent="Could not save. Please try again."}};
+</script>
+</body>
+</html>
